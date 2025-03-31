@@ -5,13 +5,24 @@ const proxy = createProxy();
 
 const router = express.Router();
 
-router.get('/',(req,res)=>{
-    res.json({msg : 'working'})
+
+router.all('/user/*',(req,res)=>{
+    proxy.web(req, res,{target: 'http://localhost:4001/'})
 })
 
 router.all('/movie/*',(req,res)=>{
     proxy.web(req, res,{target: 'http://localhost:4002/'})
 })
+
+router.all('/booking/*',(req,res)=>{
+    proxy.web(req, res,{target: 'http://localhost:4003/'})
+})
+
+router.all('/payment/*',(req,res)=>{
+    proxy.web(req, res,{target: 'http://localhost:4004/'})
+})
+
+
 
 module.exports = router
 
