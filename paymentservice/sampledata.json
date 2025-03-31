@@ -1,0 +1,15 @@
+[{
+    "bookingId": "f85f7e4a-8d2a-4bcb-a5b1-7f6bc28f3e4b",
+    "userId": "c2e9a5b1-2c8d-4b1a-9d3c-3c4a3b45113d",
+    "amount": 1500,
+    "status": "completed",
+    "paymentMethod": "credit_card"
+  },
+
+  {
+    "bookingId": "82a3a1b8-7a73-4e9d-9fb1-e362fe1e2d19",
+    "userId": "d9f22a47-7f0d-4c73-98b2-1b5b7c8327ef",
+    "amount": 2000,
+    "status": "initiated",
+    "paymentMethod": "upi"
+  }]

@@ -1,0 +1,17 @@
+[
+    {
+        "userId": "d9f22a47-7f0d-4c73-98b2-1b5b7c8327ef", 
+        "showdetailsId": "82a3a1b8-7a73-4e9d-9fb1-e362fe1e2d19",
+        "seats": ["B4", "B5", "B6"],
+        "status": "confirmed",
+        "paymentId": "c1b0e3a5-d93c-48b9-a1e7-2c31fe8a8cf9"
+      },
+      {
+        "userId": "f85f7e4a-8d2a-4bcb-a5b1-7f6bc28f3e4b", 
+        "showdetailsId": "c23ab3de-0c9d-4e5b-81a6-204f7b560f2d",
+        "seats": ["A1", "A2", "A3"],
+        "status": "pending",
+        "paymentId": "e6f1d1c1-b98e-4b16-8199-b5db4c428c12"
+      }      
+      
+]
