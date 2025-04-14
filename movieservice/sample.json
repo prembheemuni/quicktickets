@@ -1,0 +1,109 @@
+[
+    {
+        "title": "The Dark Knight",
+        "description": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham. The Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+        "duration": 152,
+        "genre": [
+            "Action",
+            "Crime",
+            "Drama"
+        ],
+        "language": "English",
+        "showdetails": [
+            {
+                "cinemaLocation": "Cinema 1 - Downtown",
+                "startTime": "2025-03-25T18:00:00Z",
+                "availableSeats": 120
+            },
+            {
+                "cinemaLocation": "Cinema 3 - Uptown",
+                "startTime": "2025-03-25T21:00:00Z",
+                "availableSeats": 100
+            }
+        ]
+    },
+    {
+        "title": "Inception",
+        "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the task of planting an idea into the mind of a CEO. However, his tragic past may doom the project and his team to disaster.",
+        "duration": 148,
+        "genre": [
+            "Action",
+            "Adventure",
+            "Sci-Fi"
+        ],
+        "language": "English",
+        "showdetails": [
+            {
+                "cinemaLocation": "Cinema 2 - Downtown",
+                "startTime": "2025-03-26T17:30:00Z",
+                "availableSeats": 150
+            },
+            {
+                "cinemaLocation": "Cinema 4 - Midtown",
+                "startTime": "2025-03-26T20:30:00Z",
+                "availableSeats": 130
+            }
+        ]
+    },
+    {
+        "title": "The Matrix",
+        "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+        "duration": 136,
+        "genre": ["Action", "Sci-Fi"],
+        "language": "English",
+        "showdetails": [
+          {
+            "cinemaLocation": "Cinema 5 - Downtown",
+            "startTime": "2025-03-27T16:00:00Z",
+            "availableSeats": 100
+          },
+          {
+            "cinemaLocation": "Cinema 6 - West End",
+            "startTime": "2025-03-27T19:00:00Z",
+            "availableSeats": 80
+          }
+        ]
+      },
+      {
+        "title": "Titanic",
+        "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+        "duration": 195,
+        "genre": ["Drama", "Romance"],
+        "language": "English",
+        "showdetails": [
+          {
+            "cinemaLocation": "Cinema 7 - South Bay",
+            "startTime": "2025-03-28T18:30:00Z",
+            "availableSeats": 150
+          },
+          {
+            "cinemaLocation": "Cinema 8 - North Shore",
+            "startTime": "2025-03-28T21:00:00Z",
+            "availableSeats": 120
+          }
+        ]
+      },
+      {
+        "title": "Jurassic Park",
+        "description": "During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.",
+        "duration": 127,
+        "genre": [
+            "Action",
+            "Adventure",
+            "Sci-Fi"
+        ],
+        "language": "English",
+        "showdetails": [
+            {
+                "cinemaLocation": "Cinema 1 - Downtown",
+                "startTime": "2025-03-29T14:00:00Z",
+                "availableSeats": 90
+            },
+            {
+                "cinemaLocation": "Cinema 2 - East Side",
+                "startTime": "2025-03-29T17:30:00Z",
+                "availableSeats": 110
+            }
+        ]
+    }
+]
