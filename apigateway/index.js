@@ -5,10 +5,10 @@ const dotenv = require('dotenv')
 dotenv.config();
 
 const services = [
-    // {
-    //     route: '/userservice',
-    //     target: 'http://localhost:4001/'
-    // },
+    {
+        route: '/userservice',
+        target: process.env.USER_SERVICE
+    },
     {
         route: '/movieservice',
         target: process.env.MOVIE_SERVICE
@@ -17,14 +17,14 @@ const services = [
         route: '/bookingservice',
         target: process.env.BOOKING_SERVICE
     },
-    // {
-    //     route: '/paymentservice',
-    //     target: 'http://localhost:4004/'
-    // },
-    // {
-    //     route: '/notificationservice',
-    //     target: 'http://localhost:4005/'
-    // },
+    {
+        route: '/paymentservice',
+        target: process.env.PAYMENT_SERVICE
+    },
+    {
+        route: '/notificationservice',
+        target: process.env.NOTIFICATION_SERVICE
+    },
 ];
 console.log(services)
 const app = express();
@@ -44,5 +44,5 @@ services.forEach((service) => {
 
 
 app.listen(process.env.PORT || 9000, () => {
-    console.log("API Gateway is running");
+    console.log("API Gateway is running at",process.env.PORT);
 });

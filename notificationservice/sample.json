@@ -1,0 +1,26 @@
+[
+  {
+    "userId": "b3d92e97-1c8d-4b4d-a01f-e4b91f6842a1",
+    "type": "booking_confirmation",
+    "message": "Your booking is confirmed for the event on 5th April 2025. See you there!",
+    "status": "sent"
+  },
+  {
+    "userId": "a8e5b2f6-45fe-4671-910f-d883c4b1773d",
+    "type": "payment_success",
+    "message": "Payment of $45.00 was successfully processed. Thank you for your purchase!",
+    "status": "sent"
+  },
+  {
+    "userId": "7e0cf39f-c478-4b8c-9d0b-94c0872312ef",
+    "type": "booking_confirmation",
+    "message": "Your booking is pending confirmation. You will be notified once confirmed.",
+    "status": "pending"
+  },
+  {
+    "userId": "f35d72a5-7f8f-46d3-bb88-dbbd5cb9942d",
+    "type": "payment_success",
+    "message": "Your payment of $150.00 was successful. Your order is now being processed.",
+    "status": "sent"
+  }
+]
