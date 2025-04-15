@@ -1,29 +1,32 @@
 const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
+const dotenv = require('dotenv')
+
+dotenv.config();
 
 const services = [
     {
         route: '/userservice',
-        target: 'http://localhost:4001/'
+        target: process.env.USER_SERVICE
     },
     {
         route: '/movieservice',
-        target: 'http://localhost:4002/'
+        target: process.env.MOVIE_SERVICE
     },
     {
         route: '/bookingservice',
-        target: 'http://localhost:4003/'
+        target: process.env.BOOKING_SERVICE
     },
     {
         route: '/paymentservice',
-        target: 'http://localhost:4004/'
+        target: process.env.PAYMENT_SERVICE
     },
     {
         route: '/notificationservice',
-        target: 'http://localhost:4005/'
+        target: process.env.NOTIFICATION_SERVICE
     },
 ];
-
+console.log(services)
 const app = express();
 
 services.forEach((service) => {
@@ -40,6 +43,6 @@ services.forEach((service) => {
 
 
 
-app.listen(9000, () => {
-    console.log("API Gateway is running at http://localhost:9000");
+app.listen(process.env.PORT || 9000, () => {
+    console.log("API Gateway is running at",process.env.PORT);
 });

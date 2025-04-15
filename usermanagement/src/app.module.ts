@@ -11,6 +11,8 @@ import { UserModule } from './user/user.module';
     UserModule,
     SequelizeModule.forRoot({
       ...databaseConfig.development,
+      autoLoadModels: true,
+      synchronize: true,
     }),
     AuthModule,
   ],
