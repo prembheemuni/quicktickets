@@ -12,15 +12,21 @@ import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { AuthGuard } from 'src/auth/auth.guard';
+import { KafkaService } from 'src/kafka/kafka.service';
 
 @Controller('user')
 export class UserController {
-  constructor(private readonly userService: UserService) {}
+  constructor(
+    private readonly userService: UserService,
+    private readonly kafkaService: KafkaService,
+  ) {}
 
   @UseGuards(AuthGuard)
   @Post()
-  create(@Body() createUserDto: CreateUserDto) {
-    return this.userService.createUser(createUserDto);
+  async create(@Body() createUserDto: CreateUserDto) {
+    const newUser = await this.userService.createUser(createUserDto);
+    await this.kafkaService.sendMessage('user-topic', JSON.stringify(newUser));
+    return newUser;
   }
 
   @Get()

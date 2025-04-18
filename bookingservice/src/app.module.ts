@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { BookingModule } from './booking/booking.module';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { databaseConfig } from './config/booking.config';
+import ConsulService from './consul/consul.service';
 
 @Module({
   imports: [
@@ -15,6 +16,6 @@ import { databaseConfig } from './config/booking.config';
     }),
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, ConsulService],
 })
 export class AppModule {}

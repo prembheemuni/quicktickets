@@ -9,15 +9,11 @@ export class AppService {
     return 'Hello World!';
   }
 
-  sendMail() {
-    const message = 'hi hello how are you';
-
-    console.log('im here');
-
+  sendMail(email: string, message: string) {
     this.mailService.sendMail({
       from: ServerConfig.EMAIL_USER,
-      to: 'prem8309090125@gmail.com',
-      subject: `How to Send Emails with Nodemailer`,
+      to: email,
+      subject: 'User Created',
       text: message,
     });
   }

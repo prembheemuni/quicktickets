@@ -7,6 +7,8 @@ import { databaseConfig } from './config/database.config';
 import { MailerModule } from '@nestjs-modules/mailer';
 import { ConfigModule } from '@nestjs/config';
 import { ServerConfig } from './config/server.config';
+import ConsulService from './consul/consul.service';
+import { KafkaService } from './kafka/kafka.service';
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
@@ -27,6 +29,6 @@ import { ServerConfig } from './config/server.config';
     }),
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, ConsulService, KafkaService],
 })
 export class AppModule {}

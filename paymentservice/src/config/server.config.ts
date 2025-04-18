@@ -9,4 +9,8 @@ export const ServerConfig = {
   POSTGRES_HOST: process.env.POSTGRES_HOST,
   POSTGRES_PORT: parseInt(process.env.POSTGRES_PORT),
   PORT: process.env.PORT,
+  CONSUL_PORT: parseInt(process.env.CONSUL_PORT),
+  CONSUL_HOST: process.env.CONSUL_HOST,
+  APPLICATION_HOST_NAME: process.env.APPLICATION_HOST_NAME,
+  APPLICATION_SERVICE_NAME: process.env.APPLICATION_SERVICE_NAME,
 };
