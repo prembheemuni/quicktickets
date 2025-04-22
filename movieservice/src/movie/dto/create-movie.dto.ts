@@ -35,8 +35,8 @@ export class CreateMovieDto {
   description: string;
 
   @IsNotEmpty()
-  @IsNumber()
-  duration: number;
+  @IsString()
+  duration: string;
 
   @IsNotEmpty()
   @IsArray()

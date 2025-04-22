@@ -10,3 +10,9 @@ export class LoginUserDto {
   @IsString()
   password: string;
 }
+
+export class VerifyPayload {
+  @IsNotEmpty()
+  @IsString()
+  token: string;
+}
